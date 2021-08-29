@@ -1,0 +1,6 @@
+function sumOf(num) {
+    let third = num%10;  // finding the third
+    let second = (Math.floor(num/10))%10; // finding the second
+    let first = Math.floor(num/100); // finding the first
+    return parseInt(third + second + first);
+}
