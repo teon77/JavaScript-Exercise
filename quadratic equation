@@ -1,0 +1,7 @@
+function Quad(a,b,c) {
+    
+ let root = (b*b) - (4*a*c)
+ let result1 = (-1*b - Math.sqrt(root))/(2*a);
+ let result2 = (-1*b + Math.sqrt(root))/(2*a);
+   console.log(parseFloat(result1),parseFloat(result2));
+}
