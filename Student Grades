@@ -1,0 +1,16 @@
+const grades = [73, 91, 88, 56, 62, 84, 95, 96, 88, 92];
+function findHigh(arr) { //finds highest value in the array
+    let high =0;
+    for (let i=0; i<arr.length;i++)
+        if (arr[i]>high) 
+            high=arr[i];
+                return high;
+    }
+    
+    function findLow(arr) {
+        let low =arr[0];            //finds lowest number in the array
+        for (let i=1; i<arr.length;i++)
+            if (arr[i]<low) 
+                low=arr[i];
+                    return low;
+        }
