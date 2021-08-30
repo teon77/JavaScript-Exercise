@@ -17,3 +17,17 @@ function findHigh(arr) { //finds highest value in the array
          function range(arr) {
             return (findHigh(arr)) - (findLow(arr)); //finding the range using the functions
         }
+          function findMedian (arr) {
+           
+            let arrHelp =[];
+            for(let i=0;i<arr.length;i++) {     //taking the values from the desired array
+                    arrHelp.unshift(arr[i]);
+                    }
+                    arrHelp.sort(); //sorting the array
+                    
+            if(arrHelp.length%2==1)     //checking if the array length is odd
+                return (arrHelp[(arrHelp.length-1)/2]);  //returning the middle cell of the array
+                return (arrHelp[arrHelp.length/2]+arrHelp[(arrHelp.length/2)-1])/2; //returning the average of the two middle cells
+
+        }
+
