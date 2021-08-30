@@ -30,4 +30,17 @@ function findHigh(arr) { //finds highest value in the array
                 return (arrHelp[arrHelp.length/2]+arrHelp[(arrHelp.length/2)-1])/2; //returning the average of the two middle cells
 
         }
-
+            
+             function halfRange (arr) {
+            let mid;                            //finding the middle index of the array
+            if(arr.length%2==1){
+                mid = (arr.length-1)/2;
+            } else {
+                mid = arr.length/2;
+            } 
+            let arrHelp =[];
+            for(let i=mid;i<arr.length;i++) {     //taking the values from the original array
+                    arrHelp.unshift(arr[i]);
+                    }
+                   return range(arrHelp);           //calling range with the second half of the original array
+        }
