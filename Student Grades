@@ -44,3 +44,7 @@ function findHigh(arr) { //finds highest value in the array
                     }
                    return range(arrHelp);           //calling range with the second half of the original array
         }
+
+ console.log("stats: \n" + "Range: " + range(grades)
+          +"\nMedian: " + findMedian(grades)
+          +"\nHalf Range: " + halfRange(grades));
