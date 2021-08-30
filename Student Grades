@@ -14,3 +14,6 @@ function findHigh(arr) { //finds highest value in the array
                 low=arr[i];
                     return low;
         }
+         function range(arr) {
+            return (findHigh(arr)) - (findLow(arr)); //finding the range using the functions
+        }
