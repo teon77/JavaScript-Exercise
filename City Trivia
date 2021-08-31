@@ -1,0 +1,17 @@
+/*Jerusalem is ancient, famous and a capital
+Tel Aviv is famous and coastal
+Acre is coastal and ancient
+Katzrin is ancient
+Zikim is coastal
+Musmus is not any of the above*/
+
+function guessCity(capital, coastal, famous, ancient) {
+    if(capital==false&&coastal==false&&famous==false&&ancient==false) return "Musmus";
+    if(capital==true&&coastal==false&&famous==true&&ancient==true) return "Jerusalem"; 
+    if(capital==false&&coastal==true&&famous==true&&ancient==false) return "Tel Aviv";   
+    if(capital==false&&coastal==true&&famous==false&&ancient==true) return "Acre";
+    if(capital==false&&coastal==false&&famous==false&&ancient==true) return "Katzrin";
+    if(capital==false&&coastal==true&&famous==false&&ancient==false) return "Zikim";
+
+        
+}
